@@ -1,1 +1,1 @@
-web: npm install -g @angular/cli && ng build --prod && ng run example-angular-ssr:server:production
+web: npm run start:heroku
