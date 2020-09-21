@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/example-angular-ssr/server/main.js",
     "build:ssr": "ng build --prod && ng run example-angular-ssr:server:production",
     "prerender": "ng run example-angular-ssr:prerender",
-    "start:heroku": "node ./dist/server/example-angular/main.js",
+    "start:heroku": "node ./dist/server/example-angular/main.js"
   },
   "private": true,
   "dependencies": {
