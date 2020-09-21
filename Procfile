@@ -1,1 +1,1 @@
-web: npm install -g @angular/cli
+web: npm install -g @angular/cli && npm run deploy
