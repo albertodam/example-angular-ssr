@@ -1,1 +1,1 @@
-web: npm install -g @angular/cli && ls
+web: npm install -g @angular/cli && ng build:ssr
