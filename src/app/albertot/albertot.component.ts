@@ -21,5 +21,4 @@ export class AlbertotComponent implements OnInit {
     this.meta.addTag({ property: "twitter:description", content:'Esto es una prueba para mi nuevo post'}, true);
     this.meta.addTag({ property: "twitter:image", content:'https://albertot.dev/images/ssr_github_angular.png'}, true);
   }
-
 }
