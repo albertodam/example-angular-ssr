@@ -8,7 +8,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - uses: akhileshns/heroku-deploy@v3.5.6
         with:
           heroku_api_key: ${{secrets.HEROKU_API_TOKEN}}
