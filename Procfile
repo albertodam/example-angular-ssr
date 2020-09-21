@@ -1,1 +1,1 @@
-web: npm install -g @angular/cli && npm install && ls
+web: npm install -g @angular/cli && npm install && npm run start:heroku
