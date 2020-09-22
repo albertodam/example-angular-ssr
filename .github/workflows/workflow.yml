@@ -14,5 +14,5 @@ jobs:
           echo "Hello world"
           npm install
       - name: Deploy
-      - working-directory: dist
         run: ls      
+      - working-directory: dist
