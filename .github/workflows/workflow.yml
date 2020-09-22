@@ -12,4 +12,7 @@ jobs:
       - name: Build angular app
         run: |
           echo "Hello world"
-          npm install        
+          npm install
+      - name: Deploy
+      - working-directory: dist
+        run: ls      
