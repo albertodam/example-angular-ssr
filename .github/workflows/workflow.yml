@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build angular app
-      - run: |
+        run: |
         npm install -g @angular/cli
         npm install
         ls dist
