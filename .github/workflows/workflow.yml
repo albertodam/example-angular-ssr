@@ -4,8 +4,18 @@ on:
     branches:
       - master
 jobs:
-  second_step:
-    name: Build and Deploy
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build angular app
+      - run: |
+        npm install -g @angular/cli
+        npm install
+        ls dist
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -14,4 +24,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_TOKEN}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
+          appdir: "dist"
         
