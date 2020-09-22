@@ -18,5 +18,9 @@ jobs:
         working-directory: dist
       - uses: akhileshns/heroku-deploy@v3.5.6
       - name: deploy dos
-        run: ls
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          appdir: example-angular-ssr
         working-directory: dist
