@@ -14,8 +14,8 @@ jobs:
           echo "Hello world"
           npm install
           ls dist/example
-      - name: Deploy
       - uses: akhileshns/heroku-deploy@v3.5.6
+      - name: Deploy
         run: echo "Deploy angular app"
         with:
           heroku_api_key: ${{secrets.HEROKU_API_TOKEN}}
