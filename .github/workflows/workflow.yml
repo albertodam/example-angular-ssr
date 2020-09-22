@@ -16,6 +16,7 @@ jobs:
           ls dist/example
       - name: Deploy
       - uses: akhileshns/heroku-deploy@v3.5.6
+        run: echo "Deploy angular app"
         with:
           heroku_api_key: ${{secrets.HEROKU_API_TOKEN}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
