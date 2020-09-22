@@ -20,7 +20,8 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: deploy
-      - uses: akhileshns/heroku-deploy@v3.5.6
-        run: ls
+      - name: Build angular app
+        run: |
+          echo "Hello world"
+          ls
         working-directory: dist
