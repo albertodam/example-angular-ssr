@@ -11,9 +11,10 @@ jobs:
       - uses: actions/checkout@v1
       - name: Build angular app
         run: |
-        npm install -g @angular/cli
-        npm install
-        ls dist
+          echo "Hello world"
+          npm install
+          npm test
+          ls dist
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
