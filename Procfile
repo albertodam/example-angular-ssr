@@ -1,1 +1,1 @@
-web: ls
+web: node dist/example-angular-ssr/server/main.js
