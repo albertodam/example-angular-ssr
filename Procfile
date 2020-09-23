@@ -1,1 +1,1 @@
-web: ls dist
+web: npm run start:heroku
